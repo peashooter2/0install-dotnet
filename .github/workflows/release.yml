@@ -30,5 +30,8 @@ jobs:
         vs-prerelease: true
         msbuild-architecture: x64
 
+    - name: restore
+      run: nuget restore
+
     - name: Build
       run: msbuild src\ZeroInstall.sln -p:Configuration=${{ matrix.configuration }}
