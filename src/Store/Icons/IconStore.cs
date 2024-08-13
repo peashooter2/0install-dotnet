@@ -6,7 +6,7 @@ using NanoByte.Common.Net;
 using NanoByte.Common.Streams;
 using NanoByte.Common.Threading;
 using ZeroInstall.Store.Configuration;
-using Drawing = System.Drawing.Common;
+using Drawing = System.Drawing;
 
 namespace ZeroInstall.Store.Icons;
 
