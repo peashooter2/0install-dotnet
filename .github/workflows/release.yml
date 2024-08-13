@@ -31,7 +31,7 @@ jobs:
         msbuild-architecture: x64
 
     - name: restore
-      run: msbuild -t:restore src\ZeroInstall.sln
+      run: nuget locals all -clear
 
     - name: Build
       run: msbuild src\ZeroInstall.sln -p:Configuration=${{ matrix.configuration }}
