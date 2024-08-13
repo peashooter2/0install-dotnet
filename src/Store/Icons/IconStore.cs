@@ -144,7 +144,7 @@ public sealed class IconStore(string path, Config config, ITaskHandler handler) 
             {
                 case Icon.MimeTypePng:
                     using (var stream = File.OpenRead(path))
-                        System.Drawing.Image.FromStream(stream).Dispose();
+                        Drawing.Image.FromStream(stream).Dispose();
                     break;
 
                 case Icon.MimeTypeIco:
