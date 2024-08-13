@@ -8,6 +8,9 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: test
         run: |
           curl -sSfLO https://github.com/${{github.repository}}/releases/download/${{github.ref_name}}/docs.zip
