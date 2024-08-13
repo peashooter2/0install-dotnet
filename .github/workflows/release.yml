@@ -35,7 +35,7 @@ jobs:
        nuget locals all -clear
        nuget locals global-packages -clear
        nuget locals http-cache -clear
-       nuget restore
+       nuget restore src\ZeroInstall.sln
 
     - name: Build
       run: msbuild src\ZeroInstall.sln -p:Configuration=${{ matrix.configuration }}
