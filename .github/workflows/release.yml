@@ -9,4 +9,4 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: test
-        run: .\build.ps1
+        run: src\build.ps1
