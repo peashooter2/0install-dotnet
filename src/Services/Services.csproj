@@ -22,7 +22,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Archives\Archives.csproj" />
   </ItemGroup>
-  <ItemGroup Condition="'$(TargetFramework)'=='net472'">
+  <ItemGroup Condition="'$(TargetFramework)'=='net8.0'">
     <Reference Include="System.Net.Http" Pack="False" />
     <Reference Include="System.Web" Pack="False" />
   </ItemGroup>
