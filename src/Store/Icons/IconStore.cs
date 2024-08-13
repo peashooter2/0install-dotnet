@@ -6,7 +6,7 @@ using NanoByte.Common.Net;
 using NanoByte.Common.Streams;
 using NanoByte.Common.Threading;
 using ZeroInstall.Store.Configuration;
-using System.Drawing;
+using Drawing = System.Drawing;
 
 namespace ZeroInstall.Store.Icons;
 
@@ -144,7 +144,7 @@ public sealed class IconStore(string path, Config config, ITaskHandler handler) 
             {
                 case Icon.MimeTypePng:
                     using (var stream = File.OpenRead(path))
-                        Drawing.Image.FromStream(stream).Dispose();
+                        System.Drawing.Image.FromStream(stream).Dispose();
                     break;
 
                 case Icon.MimeTypeIco:
